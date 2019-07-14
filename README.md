@@ -1,7 +1,7 @@
 # Report about the analyze on “War and Peace“
 - Author: Behnam Ghavimi (orcid: 0000-0002-4627-5371)
 - source of "war and peace": [https://en.wikisource.org/wiki/War_and_Peace/Book_One](https://en.wikisource.org/wiki/War_and_Peace/Book_One "https://en.wikisource.org/wiki/War_and_Peace/Book_One")
-List of Jupyter note books (python ocdes) implemented regarding the analyze:
+- List of Jupyter note books (python ocdes) implemented regarding the analyze:
 
 ## 0_Data_prepration_split_book_into_chapters.ipynb:
 This notebook contains codes to clean text (due to removing head and tail of text which was added to text automatically and not part of the real text). Also, the code tried split text to different chapters and to save them into separate files. The chapter text files were stored in the directory in the project file:
