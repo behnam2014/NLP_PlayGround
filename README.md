@@ -1,6 +1,6 @@
 # Report about the analyze on “War and Peace“
 - Author: Behnam Ghavimi (orcid: 0000-0002-4627-5371)
-- source of "war and peace": [https://en.wikisource.org/wiki/War_and_Peace/Book_One](https://en.wikisource.org/wiki/War_and_Peace/Book_One "https://en.wikisource.org/wiki/War_and_Peace/Book_One")
+- source text of "war and peace": [https://en.wikisource.org/wiki/War_and_Peace/Book_One](https://en.wikisource.org/wiki/War_and_Peace/Book_One "https://en.wikisource.org/wiki/War_and_Peace/Book_One")
 - List of Jupyter note books (python ocdes) implemented regarding the analyze:
 
 ## 0_Data_prepration_split_book_into_chapters.ipynb:
