@@ -1,13 +1,13 @@
-### Report about the analyze on “War and Peace“
+# Report about the analyze on “War and Peace“
 - Author: Behnam Ghavimi (orcid: 0000-0002-4627-5371)
 - source of "war and peace": [https://en.wikisource.org/wiki/War_and_Peace/Book_One](https://en.wikisource.org/wiki/War_and_Peace/Book_One "https://en.wikisource.org/wiki/War_and_Peace/Book_One")
 List of Jupyter note books (python ocdes) implemented regarding the analyze:
 
-# 0_Data_prepration_split_book_into_chapters.ipynb:
+## 0_Data_prepration_split_book_into_chapters.ipynb:
 This notebook contains codes to clean text (due to removing head and tail of text which was added to text automatically and not part of the real text). Also, the code tried split text to different chapters and to save them into separate files. The chapter text files were stored in the directory in the project file:
 ./Data/Chapters/”
 
-#  1_Phrase_word_distribution:
+## 1_Phrase_word_distribution:
 In this file, I tried to show some information about the distribution of words and phrases.
 1. Just as a start, I generated Wordcloud diagram of the text of the book to get a general overview.
 [![](https://raw.githubusercontent.com/behnam2014/NLP_PlayGround/master/figs/fig1.png)](https://raw.githubusercontent.com/behnam2014/NLP_PlayGround/master/figs/fig1.png)
@@ -31,7 +31,7 @@ In this file, I tried to show some information about the distribution of words a
 
 7-  diagram of top 10 more general rhetorical structure in progress of text:
 [![](https://raw.githubusercontent.com/behnam2014/NLP_PlayGround/master/figs/fig9.PNG)](https://raw.githubusercontent.com/behnam2014/NLP_PlayGround/master/figs/fig9.PNG)
-# 2_Named_Entities_Recognition_PLACE_PERSON:
+## 2_Named_Entities_Recognition_PLACE_PERSON:
 In this part, I tried to extract person entities, place entities out of the text. Regarding this purpose, two functions implemented based on NLTK and Spacy libraries for NER. Afterward, these two functions were applied to the text. Finally, the outputs of the two functions were intersected to increase precision.
 The results were stored into two sperated files:
 - Persons:
@@ -44,7 +44,7 @@ The results were stored into two sperated files:
 	- 10 samples:
 [![](https://raw.githubusercontent.com/behnam2014/NLP_PlayGround/master/figs/fig11.PNG)](https://raw.githubusercontent.com/behnam2014/NLP_PlayGround/master/figs/fig11.PNG)
 
-# 3_Sentiment_Analysis:
+## 3_Sentiment_Analysis:
 Two models were trained based on logisticRegression and Randomforest algorithms. Also since I used supervised algorithms, I need a train set of data. This train set was downloaded from:
 [http://ai.stanford.edu/~amaas/data/sentiment/](http://ai.stanford.edu/~amaas/data/sentiment/ "http://ai.stanford.edu/~amaas/data/sentiment/")
 
@@ -62,7 +62,7 @@ Based on the number of positive and negative sentences in each chapter, I decide
 
 - 	"./Data/Chapters_Sentiment.csv"
 
-# 4_Text_Sumerization:
+## 4_Text_Sumerization:
 Regarding this task, I used to different algorithms (i.e, 1- TextRank algorithm based on word embedding, 2- Tf-IDF score)  and save the results into two separate files:
 
 - Summery based on TextRank
@@ -72,7 +72,7 @@ Regarding this task, I used to different algorithms (i.e, 1- TextRank algorithm 
 	
 Regarding word embedding, pre-trained word vectors Glove is used. Also after ranking the sentences, for generating the results of each algorithm, 10 top sentences were picked.
 
-# 5_Intent_extraction_based_on_Topic_modeling:
+## 5_Intent_extraction_based_on_Topic_modeling:
 In the task, intent extraction is mentioned. Regarding intent extraction, usually supervised approaches are utilized. But regarding the supervised algorithms, we need a training set. I couldn’t think of a proper training set for this specific task. Therefore, I tried to attack the problem with an unsupervised algorithm. Regarding this purpose, I applied topic modeling on sentences. 
 
 For topic modeling, one issue is picking the number of topics. Coherence measure was applied to different models with  different number of topics from 2 to 130, and the result is depicted in the following picture:
@@ -92,7 +92,7 @@ The result was stored in the following directory:
 	- "./Data/topic_modeling.csv"
 Also for each topic by using top 9 words of each, labels were generated for the topics.
 
-# 6_Key_extraction:
+## 6_Key_extraction:
 Regarding this task, three different approach were used:
 	- Keyword extraction based on Rake library
 		- './Data/Rake_Keyword_Extraction.txt'
